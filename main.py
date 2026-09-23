@@ -6,4 +6,17 @@ set selection
 Date 9/23/26
 '''
 
+import random #use to generate random monsters for later
 
+# Playable classes as a dictonary 
+classes = {
+    "1": ("Knight", 110, 25, 10),
+    "2": ("Mage", 90, 30, 10)
+
+}
+
+#Bosses also as a dictoanry 
+bosses = {
+    "Fire Dragon": (150, 20, 30),
+    "Shadow king": (90, 30, 40)
+}
