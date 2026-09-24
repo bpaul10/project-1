@@ -77,3 +77,14 @@ while player_hp > 0 and boss_hp > 0:
         break
 
     
+    if random.randint(1,4) == 1:
+        damage = random.randint(boss_special-5, boss_special)
+        print(boss_name, "used its speical attack")
+    else:
+        damage = random.randint(boss_attack-10, boss_attack)
+
+    player_hp -= damage
+    print(boss_name, "dealt", damage, "damage to ", player)
+
+if player_hp <0:
+    print("\n You lost the name is over ", boss_name, "defeated you")
