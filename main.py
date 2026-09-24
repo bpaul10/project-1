@@ -29,3 +29,13 @@ choice = input("Type 1 or 2: ")
 while choice not in classes:
     choice = input("You have to type 1 or 2 to pick between Knight or Mage")
 
+#creating the character
+player, player_hp, attack, heal= classes[choice]
+max_hp = player_hp
+
+
+#picks a boss at random
+boss_name = random.choice(list(bosses))
+boss_hp, boss_attack, boss_special = bosses[boss_name]
+
+print("Your character is ", player, "and your opponent is ", boss_name)
