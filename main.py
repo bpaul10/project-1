@@ -20,3 +20,12 @@ bosses = {
     "Fire Dragon": (150, 20, 30),
     "Shadow king": (90, 30, 40)
 }
+
+#Player promted to choose class
+print("Choose a class 1 for Knight, 2 for Mage")
+choice = input("Type 1 or 2: ")
+
+#creates while loop incase player picks option not in selection
+while choice not in classes:
+    choice = input("You have to type 1 or 2 to pick between Knight or Mage")
+
